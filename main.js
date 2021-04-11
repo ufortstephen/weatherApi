@@ -96,7 +96,7 @@ function getWeather(e) {
                 // Declearing and styling the displayWeather box
                 let displayWeather = document.createElement('div');
                 displayWeather.classList.add('bg-transparent', 'text-white', 'w-90', 'mr-auto', 'ml-auto', 'mb-4', 'py-2');
-                displayWeather.style.boxShadow = "0px 0px 3px 3px #c5c5c5";
+                displayWeather.style.boxShadow = "0px 0px 3px 1px #c5c5c5";
                 displayWeather.style.height = "max-content";
                 displayWeather.style.width = "40%";
                 displayWeather.innerHTML = `

@@ -66,4 +66,7 @@
     .text-row {
         position: static;
     }
+    .text {
+        display: none;
+    }
 }
