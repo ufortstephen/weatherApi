@@ -83,7 +83,8 @@ carouselRow.classList.add('row')
 // Appending carouselRow to carouselDivOne
 carouselDivOne.appendChild(carouselRow)
 
-function getWeather() {
+function getWeather(e) {
+    e.preventDefault();
     // Getting InputText Value
     var cityText = document.querySelector('#cityInput').value;
     if (cityText) {
