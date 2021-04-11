@@ -43,7 +43,7 @@ function displayWeather() {
         })
 }
 displayWeather();
-setInterval('displayWeather()', 1000)
+// setInterval('displayWeather()', 1000)
 
 
 // Declearing CarouselDiv as a variable
@@ -108,10 +108,7 @@ function getWeather() {
                  <h6 class="text-center py-2 text-uppercase">TEMPERATURE : ${data.main.temp} <sup class="text-lowercase">o</sup>C</h6>
                  <h6 class="text-center py-2 text-uppercase">WIND : ${data.wind.deg}<span class="text-lowercase">deg</span>,
                   ${data.wind.speed}<span class="text-lowercase">km/hr</span></h6>
-
-                 
                  `
-
                 console.log(data)
                     // Appending displayWeather to carouselDivTwo
                 carouselRowColTwo.appendChild(displayWeather)
