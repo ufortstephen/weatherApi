@@ -6,7 +6,7 @@ form.addEventListener('submit', getWeather)
 
 // displayWeatherFunction
 function displayWeather() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Uyo&units=imperial&APPID=af80b949f75b1d5795e4ec27723680a1')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Uyo&units=imperial&APPID=af80b949f75b1d5795e4ec27723680a1')
         .then(function(response) {
             return response.json()
         })
@@ -87,7 +87,7 @@ function getWeather() {
     // Getting InputText Value
     var cityText = document.querySelector('#cityInput').value;
     if (cityText) {
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=' + cityText + '&units=imperial&APPID=af80b949f75b1d5795e4ec27723680a1')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityText + '&units=imperial&APPID=af80b949f75b1d5795e4ec27723680a1')
             .then(function(response) {
                 return response.json();
             })
